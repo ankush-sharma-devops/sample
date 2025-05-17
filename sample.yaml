@@ -1,0 +1,14 @@
+name: print message
+
+on:
+  push:
+      branch: 
+        -'main'
+
+jobs:
+  print-message:
+    runs-on: ubuntu-latest
+            
+    steps:
+    - name: print message
+    run: echo"new push detected on min branch" 
